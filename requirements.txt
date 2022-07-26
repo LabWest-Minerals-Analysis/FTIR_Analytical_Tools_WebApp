@@ -1,4 +1,4 @@
-anyio=2.2.0 #anyio @ file:///C:/ci/anyio_1620153418380/work/dist
+anyio==2.2.0 #anyio @ file:///C:/ci/anyio_1620153418380/work/dist
 argon2-cffi @ file:///C:/ci/argon2-cffi_1613037959010/work
 astropy @ file:///C:/ci/astropy_1629829351783/work
 async-generator @ file:///home/ktietz/src/ci/async_generator_1611927993394/work
