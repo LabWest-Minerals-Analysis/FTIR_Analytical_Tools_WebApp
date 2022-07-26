@@ -1,0 +1,9 @@
+QCTab,Element,CRMID,CrmQuality,ConentrationClassification,Conentration,SD,Uncertanty,UpperUncertatnty,LowerUncertatnty,Units,InstrumentName,IsotopWavelenght,InstrumentGas,DefaultAnalyte,UpdateDateTime
+FTIR,Clay_abun,QC_UFF_320,,,66,8,,,,,,,,,
+FTIR,Qtz_abun,QC_UFF_320,,,2.8,0.5,,,,,,,,,
+FTIR,Carb_abun,QC_UFF_320,,,1.6,0.3,,,,,,,,,
+FTIR,Gibbs_abun,QC_UFF_320,,NULL,,,,,,,,,,,
+FTIR,Gibbs_abun,REFSAM_STD,,Low,,,,,,,,,,,
+FTIR,Clay_abun,QC_422,,,80.7,5,,,,,,,,,
+FTIR,Qtz_abun,QC_422,,,4.9,0.6,,,,,,,,,
+FTIR,Gibbs_abun,QC_422,,NULL,,,,,,,,,,,
