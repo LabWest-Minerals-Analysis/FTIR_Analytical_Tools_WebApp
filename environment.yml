@@ -42,7 +42,7 @@ dependencies:
   - pandocfilters=1.5.0=pyhd3eb1b0_0
   - parso=0.8.3=pyhd3eb1b0_0
   - pickleshare=0.7.5=pyhd3eb1b0_1003
-  - pip=22.1.2=py38haa95532_0
+  - pip #=22.1.2=py38haa95532_0
   - prometheus_client=0.13.1=pyhd3eb1b0_0
   - prompt-toolkit=3.0.20=pyhd3eb1b0_0
   - pure_eval=0.2.2=pyhd3eb1b0_0
