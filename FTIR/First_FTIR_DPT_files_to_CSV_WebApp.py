@@ -233,7 +233,7 @@ def sed3(fc):
 
 
 # Create and display a FileChooser widget
-fc = FileChooser() #SED_source)  # W:/Logista LMS/Logista LMS Shared/Final reports/NIR Results #os.path.normpath
+fc = FileChooser('C:/') #SED_source)  # W:/Logista LMS/Logista LMS Shared/Final reports/NIR Results #os.path.normpath
 
 # Switch to folder-only mode
 fc.show_only_dirs = True

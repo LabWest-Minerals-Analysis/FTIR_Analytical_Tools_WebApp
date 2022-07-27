@@ -37,7 +37,7 @@ def main(b):
 
 # Create and display a FileChooser widget
 # Shorthand reset
-fc2 = FileChooser()#Sample_EC_pH_Template)
+fc2 = FileChooser('C:/')#Sample_EC_pH_Template)
 
 # Set a file filter pattern (uses https://docs.python.org/3/library/fnmatch.html)
 fc2.filter_pattern = ['*.xlsm', '*.csv']  # '*.xlsm' #At Labwest we are only going to use .xlsm files
