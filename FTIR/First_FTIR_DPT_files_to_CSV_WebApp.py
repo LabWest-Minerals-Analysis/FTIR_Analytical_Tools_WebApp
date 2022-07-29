@@ -198,9 +198,10 @@ def sed3(fc):
         res2 = res.copy()
         res2 = res2.replace('NULL', 0)
         if len(res2[res2['Clay_abun'] < 30]) > 1:
-            print(
-                f"{bcolors.BOLD}{bcolors.FAIL}Warning: The samples listed below have 'Clay_abun' lower than 30%. The measurements of these samples needs to be repeated on a new fresh sample.{bcolors.ENDC}")
-            print('List of samples: {} '.format(res2[res2['Clay_abun'] < 30].index.values.tolist()))
+            #print(f"{bcolors.BOLD}{bcolors.FAIL}Warning: The samples listed below have 'Clay_abun' lower than 30%. The measurements of these samples needs to be repeated on a new fresh sample.{bcolors.ENDC}")
+            #print('List of samples: {} '.format(res2[res2['Clay_abun'] < 30].index.values.tolist()))
+            display(f"{bcolors.BOLD}{bcolors.FAIL}Warning: The samples listed below have 'Clay_abun' lower than 30%. The measurements of these samples needs to be repeated on a new fresh sample.{bcolors.ENDC}")
+            display('List of samples: {} '.format(res2[res2['Clay_abun'] < 30].index.values.tolist()))
             display(res2[res2['Clay_abun'] < 30])
         res2['total_sum'] = res2['Clay_abun'] + res2['Qtz_abun'] + res2['Carb_abun'] + res2['TOC']
         if len(res2['total_sum'] < 40) > 1:
