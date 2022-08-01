@@ -6,10 +6,16 @@ dependencies:
   - numpy
   - tornado
 #  - binderhub
-  - jupyterhub
-  - hub
-hub:
-  extraConfig:
-    10-binder-customisations: |
-      class MyCustomBinderSpawner(BinderSpawner):
-      c.JupyterHub.spawner_class = MyCustomBinderSpawner
+#  - jupyterhub
+#  - hub
+binderhub:
+  jupyterhub:
+    hub:
+      extraConfig:
+        myConfig: |
+          tornado_settings_values = {
+            "websocket_max_message_size": 104857600
+            }
+          c.KubeSpawner.args = [
+            f'--NotebookApp.tornado_settings={tornado_settings_values}'
+            ]
