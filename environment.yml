@@ -8,9 +8,8 @@ dependencies:
 #  - binderhub
   - jupyterhub
   - hub
-jupyterhub:
-  hub:
-    extraConfig:
-      10-binder-customisations: |
-        class MyCustomBinderSpawner(BinderSpawner):
-        c.JupyterHub.spawner_class = MyCustomBinderSpawner
+hub:
+  extraConfig:
+    10-binder-customisations: |
+      class MyCustomBinderSpawner(BinderSpawner):
+      c.JupyterHub.spawner_class = MyCustomBinderSpawner
