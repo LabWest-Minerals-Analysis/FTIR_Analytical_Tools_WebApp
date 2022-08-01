@@ -68,7 +68,7 @@ dependencies:
   - intel-openmp #=2021.3.0=haa95532_3372
   - ipyfilechooser=0.6.0=pyhd8ed1ab_0
   - ipykernel #=6.2.0=py38haa95532_1
-  - ipyregulartable=0.2.0=pyhd8ed1ab_0
+#  - ipyregulartable=0.2.0=pyhd8ed1ab_0
   - ipysheet=0.5.0=pyhd8ed1ab_0
   - ipython #=7.26.0=py38hd4e2768_0
   - ipython_genutils=0.2.0=pyhd3eb1b0_1
