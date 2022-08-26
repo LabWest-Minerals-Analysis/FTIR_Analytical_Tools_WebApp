@@ -43,9 +43,7 @@ idx0_pivot = pd.IndexSlice
 list_samples_fc = {}
 list_samples_fc2 = {}
 for lEl_float in list_Element_float:
-    list_samples_fc[lEl_float] = df_NIR_2_melt_pivot[(df_NIR_2_melt_pivot.Reading[lEl_float] < (
-                df_NIR_2_melt_pivot.Conentration[lEl_float] - 2 * df_NIR_2_melt_pivot.SD[lEl_float])) | (
-                                                                 df_NIR_2_melt_pivot.Reading[lEl_float] > (
+    list_samples_fc[lEl_float] = df_NIR_2_melt_pivot[((df_NIR_2_melt_pivot.Reading[lEl_float].isnull()) & (~df_NIR_2_melt_pivot.Conentration[lEl_float].isnull())) | (df_NIR_2_melt_pivot.Reading[lEl_float] < (df_NIR_2_melt_pivot.Conentration[lEl_float] - 2 * df_NIR_2_melt_pivot.SD[lEl_float])) | (df_NIR_2_melt_pivot.Reading[lEl_float] > (
                                                                      df_NIR_2_melt_pivot.Conentration[lEl_float] + 2 *
                                                                      df_NIR_2_melt_pivot.SD[lEl_float]))].index
     list_samples_fc2[lEl_float] = idx0_pivot[

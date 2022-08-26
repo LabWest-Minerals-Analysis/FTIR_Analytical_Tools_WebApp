@@ -14,8 +14,8 @@ def sed4(df_uploader2):
     input_files = list(df_uploader2.value.values())
     files = []
     for f in input_files:
-        if ((f['metadata']['name'].endswith('.dpt') | f['metadata']['name'].endswith('.0') | f['metadata']['name'].endswith('.1')) and (f['metadata']['name'].split('.')[0])!='NBG'):
-            files.append(f['metadata']['name'])
+        if ((f.endswith('.dpt') | f.endswith('.0') | f.endswith('.1') | f.endswith('.2') | f.endswith('.3') | f.endswith('.4') | f.endswith('.5') | f.endswith('.6') | f.endswith('.7') | f.endswith('.8') | f.endswith('.9')) and (f.split('.')[0]) != 'NBG'):  # if f.endswith('.dpt'):
+            files.append(f)
 
     res = pd.DataFrame(columns=['Sample_ID', 'Clay_abun', 'Qtz_abun',
                                 'Carb_abun', 'TOC',
